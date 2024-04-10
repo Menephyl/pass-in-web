@@ -79,6 +79,7 @@ function goToNextPage() {
                     type="checkbox" 
                      className='size-4 bg-black/20 rounded border border-white/10 checked:bg-orange-400'
                     />
+                   
                    </TableHeader>
 
                   <TableHeader >Código </TableHeader>
@@ -92,9 +93,7 @@ function goToNextPage() {
                   </tr>
                   </thead>
                <tbody>
-                {attendees.slice((page-1)*10,page*10).map((attendee) =>
-
-              ) {
+                {attendees.slice((page-1)*10,page*10).map((attendee) => {
                  return(
                   <TableRow key={attendee.id} >
 
