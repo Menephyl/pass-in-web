@@ -22,7 +22,7 @@ dayjs.locale('pt-br')
 export function AttendeeList(){
 
   const [search, setSearch] = useState("");
-  
+
   const [page,setPage] = useState(1);
 
   const totalPages = Math.ceil(attendees.length)/10
@@ -54,8 +54,11 @@ function goToNextPage() {
         <div className='flex flex-col gap-4'>
             <div className="flex gap-3 items-center">
               <h1 className="text-2xl font-bold">Participantes</h1> 
+
                <div className="px-3  w-72 py-1.5 border border-white/10  rounded-lg text-sm flex items-center gap-3">
+
                  <Search className="size-4 text-emerald-300"/>
+
                  <input
             className="bg-transparent flex-1 outline-none border-0 p-0 text-sm"
             placeholder="Buscar participante..."
@@ -86,14 +89,21 @@ function goToNextPage() {
                   </tr>
                   </thead>
                <tbody>
-                {attendees.map((ateendee) => {
+                {attendees.slice((page-1)*10,page*10).map((attendee) =>
+
+              ) {
                  return(
                   <TableRow key={attendee.id} >
 
                 <TableCell >
-                  <input type="checkbox" className='size-4 bg-black/20 rounded border border-white/10' />
+                  <input
+                   type="checkbox" 
+                   className='size-4 bg-black/20 rounded border border-white/10' 
+                   />
                 </TableCell>
-                  <TableCell >{attendee.id}</TableCell>
+                 
+                <TableCell >{attendee.id}</TableCell>
+                
                 <TableCell > <div className='flex flex-col gap-1'>
                <span className="font-semibold text-white">
                   {attendee.name}
