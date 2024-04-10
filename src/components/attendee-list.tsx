@@ -18,6 +18,7 @@ import { attendees } from '../data/attendee-list';
 
  dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
+
 export function AttendeeList(){
 
 
