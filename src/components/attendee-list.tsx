@@ -103,8 +103,9 @@ function goToNextPage() {
                 </TableCell>
                  
                 <TableCell >{attendee.id}</TableCell>
-                
-                <TableCell > <div className='flex flex-col gap-1'>
+
+                <TableCell > 
+                <div className='flex flex-col gap-1'>
                <span className="font-semibold text-white">
                   {attendee.name}
                </span>
