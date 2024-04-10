@@ -75,7 +75,10 @@ function goToNextPage() {
              
                  <tr className='border-b border-white/10'>
                    <TableHeader style={{width:48}} className=' hover:bg-white/5'>
-                   <input type="checkbox"  className='size-4 bg-black/20 rounded border border-white/10 checked:bg-orange-400'/>
+                   <input
+                    type="checkbox" 
+                     className='size-4 bg-black/20 rounded border border-white/10 checked:bg-orange-400'
+                    />
                    </TableHeader>
 
                   <TableHeader >Código </TableHeader>
