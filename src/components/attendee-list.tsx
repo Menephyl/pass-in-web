@@ -59,23 +59,23 @@ if(search.length > 0 ){
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
-  setPage(1)
+  // setPage(1)
 
 }
 function goToFirstPage() {
- setPage(1);
+  // setPage(1);
 }
 
 function goToLastPage() {
- setPage(totalPages);
+  // setPage(totalPages);
 }
 
 function goToPreviousPage() {
- setPage(page - 1);
+  // setPage(page - 1);
 }
 
 function goToNextPage() {
-  setPage(page + 1);
+  // setPage(page + 1);
 const url = new URL(window.location.toString())
 
 url.searchParams.set('page',String(page + 1))
