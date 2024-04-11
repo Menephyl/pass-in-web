@@ -96,7 +96,6 @@ function goToNextPage() {
                 {attendees.slice((page-1)*10,page*10).map((attendee) => {
                  return(
                   <TableRow key={attendee.id} >
-
                 <TableCell >
                   <input
                    type="checkbox" 
@@ -116,7 +115,8 @@ function goToNextPage() {
                 </TableCell>
            
            <TableCell>{dayjs().to(attendee.createdAt)}</TableCell>
-                    <TableCell>
+
+          <TableCell>
                   {ateendee.checkedInAt === null ? (
                     <span className="text-zinc-400">Não fez check-in</span>
                   ) : (
