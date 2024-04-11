@@ -66,8 +66,8 @@ function setCurrentPage(page:number){
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
-  // setPage(1)
-
+setCurrentPage(page + 1)
+ 
 }
 function goToFirstPage() {
   setPage(1);
