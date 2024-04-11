@@ -27,19 +27,19 @@ dayjs.locale('pt-br')
 
 //url state
 
-export function AttendeeList(){
+export function AttendeeList() {
 
   const [search, setSearch] = useState(() => {
     const url = new URL(window.location.toString())
-  });
+  
 
    
-    if(url.searchParams.has('search ')){
-      return url.searchParams.get('search')
+    if(url.searchParams.has('search ')) {
+      return url.searchParams.get('search')?? ''
     }
 
     return ''
-  }
+  })
 
 
    
