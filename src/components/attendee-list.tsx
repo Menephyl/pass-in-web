@@ -74,7 +74,7 @@ url.searchParams.set('search',search)
 
 window.history.pushState({},"",url)
 
-setPage(page)
+setSearch(search)
 }
 
 function setCurrentPage(page:number){
