@@ -85,12 +85,10 @@ function setCurrentPage(page:number){
   window.history.pushState({},"",url)
 
   setPage(page)
-  
+
   console.log(page)
 
-  url.searchParams.set('page',String(page))
-  window.history.pushState({},"",url)
-
+  
   setPage(page)
 }
 
