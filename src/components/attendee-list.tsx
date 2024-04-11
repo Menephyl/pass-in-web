@@ -25,11 +25,11 @@ export function AttendeeList(){
 
   const [page,setPage] = useState(1);
 
-  const[attendees,set attendees =useState([])]
+  const[attendees,setAttendees =useState([])]
 
   const totalPages = Math.ceil(attendees.length)/10
 
-
+useEffect(() => {},[page])
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
