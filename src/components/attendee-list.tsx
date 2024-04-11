@@ -42,6 +42,8 @@ export function AttendeeList() {
   })
 
 
+
+  
    
   const[total,setTotal] = useState(0)
 
