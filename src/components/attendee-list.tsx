@@ -19,7 +19,7 @@ interface Attendee{
   name: string
   email:string
   createdAt: string
-  checkedInAt:string |null
+  checkedInAt:string  | null 
 }
 
  dayjs.extend(relativeTime)
@@ -48,8 +48,6 @@ if(search.length > 0 ){
   
   url.searchParams.set('query',search)
 }
-
-
   fetch(url)
   .then(response => response.json())
   .then(data =>   {
