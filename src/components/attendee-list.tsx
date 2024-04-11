@@ -42,8 +42,7 @@ export function AttendeeList(){
   })
 
 
-  const page = 1
-  
+   
   const[total,setTotal] = useState(0)
 
   const[attendees,setAttendees] = useState<Attendee[]>([])
