@@ -37,7 +37,7 @@ export function AttendeeList(){
 
   const[attendees,setAttendees]=useState([])
 
-  const totalPages = Math.ceil(total/10)
+  const totalPages = Math.ceil(total/10 )
 
 useEffect(() => {
   fetch('http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees')
@@ -155,7 +155,7 @@ function goToNextPage() {
                  <tfoot>         
                 <tr>
                 <TableCell colSpan={3}>
-              Mostrando 10 de {attendees.length} itens
+              Mostrando 10 de {total} itens
                </TableCell>
 
                  <TableCell className="text-right" colSpan={3}>
