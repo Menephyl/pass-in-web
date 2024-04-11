@@ -133,12 +133,11 @@ function goToNextPage() {
                 </tbody>
                  <tfoot>         
                 <tr>
-                       <td className='py-3 px-4 text-sm text-zinc-300' colSpan={3} >
-                       Mostrando {attendees.length} de {total} itens
-                       </td>
-                       <td className='py-3 px-4 text-sm text-zinc-300 text-right' colSpan={3} >
+                <TableCell colSpan={3}>
+              Mostrando 10 de {attendees.length} itens
+               </TableCell>
                
-                       <div className='inline-flex items-center gap-8'>
+                 <TableCell className="text-right" colSpan={3}>
                
                        <span>Página {page} de {totalPages}</span>     
                        
