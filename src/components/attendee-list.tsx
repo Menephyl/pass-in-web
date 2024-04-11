@@ -83,15 +83,11 @@ const searchParams = new URLSearchParams(window.location.search)
 searchParams.set('page',String(page + 1))
 window.location.search = searchParams.toString()
 }
-  // const url  = new URL(window.location.toString()) 
+ const url  = new URL(window.location.toString()) 
 
-  // url.searchParams.set('page',String(page + 1))
-  
-  // window.history.pushState
-  // window.location.search = searchParams.toString()
+window.history.pushState
 
 }
-
 
     return (
         <div className='flex flex-col gap-4'>
