@@ -19,6 +19,7 @@ interface Attendee{
   name: string
   email:string
   createdAt: string
+  checkedInAt:string |null
 }
 
  dayjs.extend(relativeTime)
