@@ -57,8 +57,7 @@ if(search.length > 0 ){
     setTotal(data.total)
     console.log(data)
   }) 
-},
-[page,search])
+},[page,search])
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
@@ -83,7 +82,7 @@ const url = new URL(window.location.toString())
 
 url.searchParams.set('page',String(page + 1))
 
-window.history.pushState
+window.history.pushState({},"",url)
 
 }
 
