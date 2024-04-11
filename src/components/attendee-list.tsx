@@ -163,6 +163,7 @@ function goToNextPage() {
                          </IconButton>
                           </div>
                           </div>
+                          </TableCell>
                       </tr>
                      </tfoot>
              </Table>
