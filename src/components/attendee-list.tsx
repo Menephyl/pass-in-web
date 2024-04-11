@@ -155,7 +155,7 @@ function goToNextPage() {
                  <tfoot>         
                 <tr>
                 <TableCell colSpan={3}>
-              Mostrando 10 de {total} itens
+              Mostrando {attendees.length} de {total} itens
                </TableCell>
 
                  <TableCell className="text-right" colSpan={3}>
