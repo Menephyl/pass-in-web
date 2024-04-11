@@ -18,7 +18,7 @@ interface Attendee{
   id: string
   name: string
   email:string
-  createdAt
+  createdAt: string
 }
 
  dayjs.extend(relativeTime)
