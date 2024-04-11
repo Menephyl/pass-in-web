@@ -116,9 +116,7 @@ function goToNextPage() {
            
            <TableCell>{dayjs().to(attendee.createdAt)}</TableCell>
            <TableCell>{dayjs().to(ateendee.checkedInAt)}</TableCell>
-          <TableCell>
-                
-                </TableCell>
+        
                   
                     <TableCell>
                        
