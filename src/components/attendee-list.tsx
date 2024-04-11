@@ -40,6 +40,10 @@ export function AttendeeList(){
   const totalPages = Math.ceil(total/10 )
 
 useEffect(() => {
+const url = new URL()
+
+
+
   fetch(`http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees?pageIndex=${page-1}`)
   .then(response => response.json())
   .then(data =>   {
