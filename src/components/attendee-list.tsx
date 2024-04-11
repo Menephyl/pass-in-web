@@ -89,7 +89,7 @@ function setCurrentPage(page:number){
   console.log(page)
 
   
-  setPage(page)
+
 }
 
 
