@@ -36,9 +36,9 @@ export function AttendeeList(){
   
   const[total,setTotal] = useState(0)
 
-  const[attendees,setAttendees]=useState<Attendee[]>([])
+  const[attendees,setAttendees] = useState<Attendee[]>([])
 
-  const totalPages = Math.ceil(total/10 )
+  const totalPages = Math.ceil(total / 10 )
 
 useEffect(() => {
 const url = new URL('http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees')
