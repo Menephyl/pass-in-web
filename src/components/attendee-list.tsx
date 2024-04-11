@@ -50,7 +50,7 @@ if(search.length > 0 ){
 }
   fetch(url)
   .then(response => response.json())
-  .then(data =>   {
+  .then(data => {
     setAttendees(data.attendees)
     setTotal(data.total)
     console.log(data)
