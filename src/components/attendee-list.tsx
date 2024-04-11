@@ -33,6 +33,7 @@ useEffect(() => {
   fetch('http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees')
   .then(response => response.json())
   .then(data =>   {
+    setAttendees(data.attendees)
     console.log(data)
   })
 },[page])
@@ -97,7 +98,7 @@ function goToNextPage() {
                    <TableHeader >Data de Inscrição</TableHeader>
 
                    <TableHeader >Data Check-in</TableHeader>
-                   
+
                   <TableHeader style={{width:64}} ></TableHeader>
                   </tr>
                   </thead>
