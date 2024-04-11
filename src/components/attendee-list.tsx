@@ -31,7 +31,7 @@ export function AttendeeList(){
 
   const [search, setSearch] = useState("");
 
-  const [page,setPage] = useState(1);
+  // const [page,setPage] = useState(1);
   
   const[total,setTotal] = useState(0)
 
@@ -79,6 +79,7 @@ function goToPreviousPage() {
 
 function goToNextPage() {
   // setPage(page + 1);
+const searchParams = new URLSearchParams(window.location.search)
 
   const url  = new URL(window.location.toString()) 
 
