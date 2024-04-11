@@ -115,7 +115,7 @@ function goToNextPage() {
                 </TableCell>
            
            <TableCell>{dayjs().to(attendee.createdAt)}</TableCell>
-
+           <TableCell>{dayjs().to(ateendee.checkedInAt)}</TableCell>
           <TableCell>
                   {ateendee.checkedInAt === null ? (
                     <span className="text-zinc-400">Não fez check-in</span>
