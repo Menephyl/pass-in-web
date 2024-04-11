@@ -67,7 +67,7 @@ function goToFirstPage() {
 }
 
 function goToLastPage() {
-  // setPage(totalPages);
+ setPage(totalPages);
 }
 
 function goToPreviousPage() {
