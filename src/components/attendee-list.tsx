@@ -142,10 +142,12 @@ function goToNextPage() {
                        <span>Página {page} de {totalPages}</span>     
                        
                        <div className='flex gap-1.5'>
-                           <IconButton onClick={goToFirstPage} disabled={page === 1}>
+                           <IconButton onClick={goToFirstPage} 
+                           disabled={page === 1}>
                        <ChevronsLeft className="size-4" />
                          </IconButton>
-                           <IconButton onClick={goToPreviousPage} disabled={page === 1}>
+                           <IconButton onClick={goToPreviousPage}
+                            disabled={page === 1}>
                         <ChevronLeft className="size-4" />
                         </IconButton>
                       <IconButton onClick={goToNextPage} disabled={page === totalPages}>
