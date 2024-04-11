@@ -63,7 +63,7 @@ function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
 
 }
 function goToFirstPage() {
-  // setPage(1);
+ setPage(1);
 }
 
 function goToLastPage() {
