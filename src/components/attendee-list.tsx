@@ -61,7 +61,10 @@ if(search.length > 0 ){
 
 function setCurrentPage(page:number){
   const url = new URL(window.location.toString())
-  url.searchParams.set('page',String(page + 1))
+
+  console.log(page)
+
+  url.searchParams.set('page',String(page))
   window.history.pushState({},"",url)
 }
 
