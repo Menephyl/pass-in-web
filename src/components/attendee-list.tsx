@@ -25,6 +25,8 @@ export function AttendeeList(){
 
   const [page,setPage] = useState(1);
 
+  const[attendees,set attendees =useState([])]
+
   const totalPages = Math.ceil(attendees.length)/10
 
 
