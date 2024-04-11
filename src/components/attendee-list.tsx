@@ -71,7 +71,7 @@ function goToLastPage() {
 }
 
 function goToPreviousPage() {
-  // setPage(page - 1);
+ setPage(page - 1);
 }
 
 function goToNextPage() {
