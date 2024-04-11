@@ -32,6 +32,8 @@ export function AttendeeList(){
   const [search, setSearch] = useState("");
 
   const [page,setPage] = useState(1);
+  
+  const[total,setTotal] = useState(0)
 
   const[attendees,setAttendees]=useState([])
 
@@ -42,6 +44,7 @@ useEffect(() => {
   .then(response => response.json())
   .then(data =>   {
     setAttendees(data.attendees)
+    setTotal(data.total)
     console.log(data)
   })
 },[page])
