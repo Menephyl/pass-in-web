@@ -97,6 +97,7 @@ function goToNextPage() {
                    <TableHeader >Data de Inscrição</TableHeader>
 
                    <TableHeader >Data Check-in</TableHeader>
+                   
                   <TableHeader style={{width:64}} ></TableHeader>
                   </tr>
                   </thead>
