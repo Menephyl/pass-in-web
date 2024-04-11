@@ -31,7 +31,9 @@ export function AttendeeList(){
 
   const [search, setSearch] = useState("");
 
-   const [page,setPage] = useState(1);
+   const [page,setPage] = useState(() =>{
+    const url new URL(Window.location.toString())
+   })
 
 
   const page = 1
