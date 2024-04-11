@@ -59,7 +59,7 @@ if(search.length > 0 ){
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
-  // setPage(1)
+  setPage(1)
 
 }
 function goToFirstPage() {
