@@ -32,6 +32,7 @@ export function AttendeeList(){
   const [search, setSearch] = useState("");
 
   // const [page,setPage] = useState(1);
+  const page = 1
   
   const[total,setTotal] = useState(0)
 
