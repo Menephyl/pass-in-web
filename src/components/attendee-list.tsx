@@ -41,9 +41,11 @@ export function AttendeeList() {
     return ''
   })
 
+const [page, setPage] = useState(()
+const url new URL(window.location)
+)
 
 
-  
    
   const[total,setTotal] = useState(0)
 
