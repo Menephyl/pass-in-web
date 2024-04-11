@@ -25,14 +25,14 @@ export function AttendeeList(){
 
   const [page,setPage] = useState(1);
 
-  const[attendees,setAttendees =useState([])]
+  const[attendees,setAttendees]=useState([])
 
   const totalPages = Math.ceil(attendees.length)/10
 
 useEffect(() => {
   fetch('http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees').then(response =>response.json())
   .then(data=>{
-    
+    console.log(data)   
   })
 },[page])
 
