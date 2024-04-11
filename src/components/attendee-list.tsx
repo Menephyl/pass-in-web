@@ -15,7 +15,8 @@ import {TableRow} from './table/table-row'
 import { ChangeEvent,useEffect,useState } from 'react';
 
 interface Attendee{
-  
+  id: string
+  name: string
 }
 
  dayjs.extend(relativeTime)
