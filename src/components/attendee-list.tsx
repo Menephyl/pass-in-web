@@ -83,10 +83,7 @@ const url = new URL(window.location.toString())
 
 url.searchParams.set('page',String(page + 1))
 
-window.location.search = searchParams.toString()
- 
-
-  
+window.history.pushState
 
 }
 
