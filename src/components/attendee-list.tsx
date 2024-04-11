@@ -73,6 +73,7 @@ function goToPreviousPage() {
 
 function goToNextPage() {
   // setPage(page + 1);
+  const searchParams = new URLSearchParams(window.location.search)
 }
 
 
