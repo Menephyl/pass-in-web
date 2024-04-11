@@ -13,7 +13,7 @@ import { TableHeader } from './table/table-head';
 import {TableCell} from './table/table-cell'
 import {TableRow} from './table/table-row'
 import { ChangeEvent,useState } from 'react';
-import { attendees } from '../data/attendee-list';
+
 
 
  dayjs.extend(relativeTime)
