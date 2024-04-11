@@ -68,6 +68,10 @@ if(search.length > 0 ){
   }) 
 },[page,search])
 
+function setCurrentSearch(search:string){
+  
+}
+
 function setCurrentPage(page:number){
   const url = new URL(window.location.toString())
 
@@ -81,7 +85,7 @@ function setCurrentPage(page:number){
 
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
-  setSearch(event.target.value);
+   setSearch(event.target.value);
   setCurrentPage(1)
 
 }
