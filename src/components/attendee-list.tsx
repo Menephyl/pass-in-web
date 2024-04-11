@@ -25,7 +25,7 @@ interface Attendee{
  dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
 
-
+//url state
 
 export function AttendeeList(){
 
