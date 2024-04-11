@@ -154,11 +154,11 @@ window.history.pushState({},"",url)
            <TableCell>{dayjs().to(attendee.checkedInAt)}</TableCell>
         
                   
-                    <TableCell>
-                   <IconButton transparent={true}  /* transparent
-                    className="bg-black/20 border border-white/10 rounded-md p-1.5 */
-                    > 
-                    <MoreHorizontal className='size-4'/>
+          <TableCell>
+            <IconButton transparent={true}  /* transparent
+            className="bg-black/20 border border-white/10 rounded-md p-1.5 */
+            > 
+           <MoreHorizontal className='size-4'/>
                     </IconButton>
                    </TableCell>
                  </TableRow>
