@@ -120,8 +120,6 @@ url.searchParams.set('page',String(page + 1))
 window.history.pushState({},"",url)
 
 }
-
-
     return (
         <div className='flex flex-col gap-4'>
             <div className="flex gap-3 items-center">
