@@ -68,9 +68,9 @@ if(search.length > 0 ){
   }) 
 },[page,search])
 
-function setCurrentSearch(search:string){
+function setCurrentSearch(search: string){
   const url = new URL(window.location.toString())
-url.searchParams.set('search',string(page))
+url.searchParams.set('search',search)
 
 window.history.pushState({},"",url)
 
