@@ -35,7 +35,7 @@ export function AttendeeList(){
   
   const[total,setTotal] = useState(0)
 
-  const[attendees,setAttendees]=useState([])
+  const[attendees,setAttendees]=useState<Attendee>([])
 
   const totalPages = Math.ceil(total/10 )
 
