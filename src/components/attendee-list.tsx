@@ -119,7 +119,9 @@ function goToNextPage() {
         
                   
                     <TableCell>
-                   <IconButton transparent={true}> 
+                   <IconButton transparent={true}  /* transparent
+                    className="bg-black/20 border border-white/10 rounded-md p-1.5 */
+                    > 
                     <MoreHorizontal className='size-4'/>
                     </IconButton>
                    </TableCell>
@@ -128,8 +130,8 @@ function goToNextPage() {
                    }
                      )
                        }
-                         </tbody>
-                           <tfoot>
+                </tbody>
+                 <tfoot>         
                 <tr>
                        <td className='py-3 px-4 text-sm text-zinc-300' colSpan={3} >
                        Mostrando {attendees.length} de {total} itens
