@@ -150,10 +150,12 @@ function goToNextPage() {
                             disabled={page === 1}>
                         <ChevronLeft className="size-4" />
                         </IconButton>
-                      <IconButton onClick={goToNextPage} disabled={page === totalPages}>
+                      <IconButton onClick={goToNextPage}
+                       disabled={page === totalPages}>
                        <ChevronRight className="size-4" />
                         </IconButton>
-                         <IconButton onClick={goToLastPage} disabled={page === totalPages}>
+                         <IconButton onClick={goToLastPage} 
+                         disabled={page === totalPages}>
                          <ChevronsRight className="size-4" />
                          </IconButton>
                           </div>
