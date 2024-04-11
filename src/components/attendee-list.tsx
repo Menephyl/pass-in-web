@@ -55,7 +55,8 @@ if(search.length > 0){
     setTotal(data.total)
     console.log(data)
   }) 
-},[page,search])
+},
+[page,search])
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
