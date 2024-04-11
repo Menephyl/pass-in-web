@@ -82,7 +82,7 @@ function goToPreviousPage() {
 }
 
 function goToNextPage() {
-setPage(page + 1);
+setCurrentPage(page + 1);
 
 const url = new URL(window.location.toString())
 
