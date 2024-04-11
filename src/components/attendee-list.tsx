@@ -79,9 +79,9 @@ function goToPreviousPage() {
 
 function goToNextPage() {
   // setPage(page + 1);
-const url = new URL(window.location.search)
+const url = new URL(window.location.toString())
 
-searchParams.set('page',String(page + 1))
+url.searchParams.set('page',String(page + 1))
 
 window.location.search = searchParams.toString()
  
