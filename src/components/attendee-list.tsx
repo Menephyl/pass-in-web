@@ -14,7 +14,9 @@ import {TableCell} from './table/table-cell'
 import {TableRow} from './table/table-row'
 import { ChangeEvent,useEffect,useState } from 'react';
 
-
+interface Attendee{
+  
+}
 
  dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
