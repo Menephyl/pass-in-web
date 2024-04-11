@@ -110,7 +110,7 @@ function goToNextPage() {
                <span className="font-semibold text-white">
                   {attendee.name}
                </span>
-              <span>{attendee.email}</span>
+              <span>{attendee.email.toString()}</span>
             </div>
                 </TableCell>
            
