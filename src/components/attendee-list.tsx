@@ -78,7 +78,9 @@ function goToNextPage() {
 
   url.searchParams.set('page',String(page + 1))
   
+  window.history.pushState
   window.location.search = searchParams.toString()
+
 }
 
 
