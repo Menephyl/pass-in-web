@@ -119,7 +119,6 @@ function goToNextPage() {
         
                   
                     <TableCell>
-                       
                    <IconButton transparent={true}> 
                     <MoreHorizontal className='size-4'/>
                     </IconButton>
