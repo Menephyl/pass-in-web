@@ -80,6 +80,12 @@ setPage(page)
 function setCurrentPage(page:number){
   const url = new URL(window.location.toString())
 
+  url.searchParams.set('page',String(page))
+
+  window.history.pushState({},"",url)
+
+  setPage(page)
+  
   console.log(page)
 
   url.searchParams.set('page',String(page))
