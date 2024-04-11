@@ -19,6 +19,8 @@ import { ChangeEvent,useEffect,useState } from 'react';
  dayjs.extend(relativeTime)
 dayjs.locale('pt-br')
 
+
+
 export function AttendeeList(){
 
   const [search, setSearch] = useState("");
