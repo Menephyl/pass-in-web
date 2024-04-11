@@ -41,17 +41,24 @@ export function AttendeeList() {
     return ''
   })
 
-const [page, setPage] = useState(()
-const url new URL(window.location)
-)
+const [page, setPage] = useState(() =>{
+const url = new URL(window.location.toString())
+
+if(url.searchParams.has('page')){
+  return Number(url.searchParams.get('page'))
+}
+return 1
+})
 
 
-   
-  const[total,setTotal] = useState(0)
 
-  const[attendees,setAttendees] = useState<Attendee[]>([])
 
-  const totalPages = Math.ceil(total / 10 )
+const[total,setTotal] = useState(0)
+
+const[attendees,setAttendees] = useState<Attendee[]>([])
+
+const totalPages = Math.ceil(total / 10 )
+
 
 useEffect(() => {
   
