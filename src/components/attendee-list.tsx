@@ -57,7 +57,8 @@ if(search.length > 0 ){
     setTotal(data.total)
     console.log(data)
   }) 
-},[page,search])
+},
+[page,search])
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
@@ -82,12 +83,16 @@ const searchParams = new URLSearchParams(window.location.search)
 
 searchParams.set('page',String(page + 1))
 window.location.search = searchParams.toString()
-}
- const url  = new URL(window.location.toString()) 
 
-window.history.pushState
+  const url  = new URL(window.location.toString()) 
+
+  url.searchParams.set('page',String(page + 1))
+  
+
+  window.location.search = searchParams.toString()
 
 }
+
 
     return (
         <div className='flex flex-col gap-4'>
