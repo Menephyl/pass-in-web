@@ -52,7 +52,7 @@ url.searchParams.set('pageIndex',String(page -1))
     setTotal(data.total)
     console.log(data)
   }) 
-},[page])
+},[page,search])
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
   setSearch(event.target.value);
