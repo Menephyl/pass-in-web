@@ -68,6 +68,8 @@ function setCurrentPage(page:number){
 
   url.searchParams.set('page',String(page))
   window.history.pushState({},"",url)
+
+  setPage()
 }
 
 
