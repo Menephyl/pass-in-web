@@ -75,7 +75,7 @@ function goToPreviousPage() {
 }
 
 function goToNextPage() {
-  // setPage(page + 1);
+  setPage(page + 1);
 const url = new URL(window.location.toString())
 
 url.searchParams.set('page',String(page + 1))
