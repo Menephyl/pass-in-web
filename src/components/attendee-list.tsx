@@ -56,7 +56,7 @@ return 1
 const[total,setTotal] = useState(0)
 
 const[attendees,setAttendees] = useState<Attendee[]>([])
-
+3
 const totalPages = Math.ceil(total / 10 )
 
 
