@@ -105,7 +105,7 @@ function setCurrentPage(page:number){
 
 
 function onSearchInputChanged(event:ChangeEvent<HTMLInputElement>) {
-   setSearch(event.target.value);
+   setCurrentSearch(event.target.value);
   setCurrentPage(1)
 
 }
@@ -122,6 +122,7 @@ function goToPreviousPage() {
 }
 
 function goToNextPage() {
+
 setCurrentPage(page + 1);
 
 const url = new URL(window.location.toString())
